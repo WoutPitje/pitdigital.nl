@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>
+			Wout Pittens
+		</title>
+		<style>
+			@font-face {
+				font-family: "Futura Display";
+				src: url("FuturaDisplay.ttf")
+					format("truetype");
+			}
+			@font-face {
+				font-family: "Futura";
+				src: url("Futura.ttf")
+					format("truetype");
+			}
+			img {
+				border-radius: 2px;
+			}
+			body {
+				font-family: "Futura",
+					Arial, sans-serif;
+				margin: 0;
+				padding: 0;
+				background-color: #ffffff;
+				color: #000000;
+			}
+			.container {
+				max-width: 650px;
+				margin: auto;
+				padding: 10px 30px 0
+					30px;
+			}
+			.row {
+				display: flex;
+				gap: 24px;
+				justify-content: space-between;
+			}
+			.header {
+				display: flex;
+				gap: 24px;
+				align-items: center;
+			}
+			.title {
+				font-family: "Futura Display",
+					Arial, sans-serif;
+				font-weight: bold;
+			}
+			h2 {
+				font-family: "Futura Display",
+					Arial, sans-serif;
+			}
+			p {
+				font-family: "Futura",
+					Arial, sans-serif;
+				font-weight: normal;
+			}
+			.logo {
+				width: 50px;
+				height: 50px;
+			}
+			.self {
+				width: 150px; /* Adjust width as needed */
+				height: auto;
+				margin: 10px;
+				float: right;
+			}
+			.footer {
+				display: flex;
+				justify-content: start;
+				margin-top: 40px;
+				margin-bottom: 40px;
+				gap: 20px;
+			}
+			.footer img {
+				width: 40px;
+				height: 40px;
+			}
+			.form-group-container {
+				display: flex;
+				flex-direction: column;
+				justify-content: start;
+				width: full;
+				gap: 12px;
+			}
+			.form-group {
+				display: flex;
+				flex-direction: start;
+				gap: 8px;
+				align-items: center;
+			}
+
+			.form-group label {
+				min-width: 100px;
+			}
+
+			input,
+			textarea {
+				border: 1px solid
+					black;
+				border-radius: 2px;
+				padding: 8px 4px 8px
+					4px;
+			}
+
+			.form-group input,
+			.form-group textarea {
+				flex-grow: 1;
+				font-family: "Futura",
+					Arial, sans-serif;
+			}
+
+			button {
+				width: 100%;
+				background-color: #004aad;
+				color: white;
+				font-family: "Futura",
+					Arial, sans-serif;
+				padding: 8px;
+				border: none;
+				border-radius: 2px;
+				margin-top: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div
+			class="header container"
+		>
+			<img
+				src="logo.png"
+				alt="Logo"
+				class="logo"
+			/>
+			<h1 class="title">
+				Wout Pittens
+			</h1>
+		</div>
+		<div
+			class="container row"
+		>
+			<div>
+				<h2>Wie ben ik?</h2>
+				<p>
+					<img
+						src="self.jpeg"
+						alt="Self image"
+						class="self"
+					/>
+					Lorem ipsum dolor
+					sit amet,
+					consectetur
+					adipiscing elit. Nam
+					et turpis in ipsum
+					scelerisque
+					sagittis. Phasellus
+					facilisis quam sem,
+					vitae sollicitudin
+					mauris rutrum eu.
+					Cras id purus velit.
+					Aenean eleifend
+					gravida
+					pellentesque. Nulla
+					sit amet turpis est.
+					Duis ac hendrerit
+					purus. Aenean at
+					dolor eu erat
+					suscipit maximus et
+					eu neque. Lorem
+					ipsum dolor sit
+					amet, consectetur
+					adipiscing elit.
+					Maecenas id tortor
+					feugiat, tincidunt
+					tortor ultrices,
+					ultrices risus.
+					Fusce luctus enim
+					magna, a porta urna
+					fermentum quis.
+				</p>
+			</div>
+		</div>
+		<div class="container">
+			<h2>Wat doe ik?</h2>
+			<p>
+				Lorem ipsum dolor sit
+				amet, consectetur
+				adipiscing elit. Nam
+				et turpis in ipsum
+				scelerisque sagittis.
+				Phasellus facilisis
+				quam sem, vitae
+				sollicitudin mauris
+				rutrum eu. Cras id
+				purus velit. Aenean
+				eleifend gravida
+				pellentesque. Nulla
+				sit amet turpis est.
+				Duis ac hendrerit
+				purus. Aenean at dolor
+				eu erat suscipit
+				maximus et eu neque.
+				Lorem ipsum dolor sit
+				amet, consectetur
+				adipiscing elit.
+				Maecenas id tortor
+				feugiat, tincidunt
+				tortor ultrices,
+				ultrices risus. Fusce
+				luctus enim magna, a
+				porta urna fermentum
+				quis.
+			</p>
+		</div>
+		<div class="container">
+			<form
+				class="contact-form"
+				action="https://api.web3forms.com/submit"
+				method="POST"
+			>
+				<h2>
+					Laten we sparren!
+				</h2>
+				<p>Info</p>
+				<input
+					type="hidden"
+					name="access_key"
+					value="8fff7f0a-2c5d-4ad8-bd63-072b25c9c418"
+				/>
+				<input
+					type="hidden"
+					name="subject"
+					value="New Contact Form Submission woutpittens.nl"
+				/>
+				<input
+					type="hidden"
+					name="from_name"
+					value="woutpittens.nl"
+				/>
+
+				<div
+					class="form-group-container"
+				>
+					<div
+						class="form-group"
+					>
+						<label
+							for="name"
+							class="form-label"
+							>Naam</label
+						>
+						<input
+							id="name"
+							name="name"
+							class="form-input"
+							placeholder="Jouw naam"
+							type="text"
+							required
+						/>
+					</div>
+					<div
+						class="form-group"
+					>
+						<label
+							for="email"
+							class="form-label"
+							>Email</label
+						>
+						<input
+							id="email"
+							name="email"
+							class="form-input"
+							placeholder="Jouw email"
+							type="email"
+							required
+						/>
+					</div>
+					<div
+						class="form-group"
+					>
+						<label
+							for="phone"
+							class="form-label"
+							>Telefoon</label
+						>
+						<input
+							id="phone"
+							name="phone"
+							class="form-input"
+							placeholder="+1 (234) 56789"
+							type="text"
+						/>
+					</div>
+					<div
+						class="form-group"
+					>
+						<label
+							for="message"
+							class="form-label"
+							>Bericht</label
+						>
+						<textarea
+							class="form-textarea"
+							id="message"
+							name="message"
+							placeholder="Jouw bericht"
+							required
+						></textarea>
+					</div>
+				</div>
+				<button
+					class="form-submit"
+					type="submit"
+				>
+					Verstuur
+				</button>
+			</form>
+		</div>
+		<div
+			class="container footer"
+		>
+			<a
+				href="mailto:example@example.com"
+				><img
+					src="email.png"
+					alt="Email"
+			/></a>
+			<a
+				href="tel:+1234567890"
+				><img
+					src="phone.png"
+					alt="Phone"
+			/></a>
+
+			<a
+				href="https://pit-link.com"
+				target="_blank"
+				><img
+					src="2.png"
+					alt="PIT"
+			/></a>
+			<a
+				href="https://pit-link.com"
+				target="_blank"
+				><img
+					src="3.png"
+					alt="PIT"
+			/></a>
+			<a
+				href="https://cbyte.digital"
+				target="_blank"
+				><img
+					src="cbyte_logo.jpeg"
+					alt="CByte"
+			/></a>
+			<a
+				href="https://cbyte.digital"
+				target="_blank"
+				><img
+					src="glue_logo.png"
+					alt="CByte"
+			/></a>
+		</div>
+	</body>
+</html>
