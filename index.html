@@ -217,6 +217,7 @@
 					class="contact-form"
 					action="https://api.web3forms.com/submit"
 					method="POST"
+					onsubmit="disableButton()"
 				>
 					<h2>
 						Leuk om elkaar te
@@ -324,6 +325,7 @@
 					<button
 						class="form-submit"
 						type="submit"
+						id="submitButton"
 					>
 						Verstuur
 					</button>
@@ -367,5 +369,16 @@
 				/></a>
 			</div>
 		</div>
+		<script>
+			function disableButton() {
+				document.getElementById(
+					"submitButton"
+				).disabled = true;
+				document.getElementById(
+					"submitButton"
+				).innerText =
+					"Verzenden...";
+			}
+		</script>
 	</body>
 </html>
