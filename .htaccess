@@ -9,14 +9,6 @@ RewriteRule ^$ /pitdigital.nl/index.html [L]
 RewriteCond %{HTTP_HOST} ^(www\.)?woutpittens\.nl$ [NC]
 RewriteRule ^$ /woutpittens.nl/index.html [L]
 
-# Custom 404 Error Document for pitdigital.nl
-RewriteCond %{HTTP_HOST} ^(www\.)?pitdigital\.nl$ [NC]
-ErrorDocument 404 /pitdigital.nl/404.html
-
-# Custom 404 Error Document for woutpittens.nl
-RewriteCond %{HTTP_HOST} ^(www\.)?woutpittens\.nl$ [NC]
-ErrorDocument 404 /woutpittens.nl/404.html
-
 # Handle requests to /pitdigital.nl folder
 RewriteCond %{HTTP_HOST} ^(www\.)?pitdigital\.nl$ [NC]
 RewriteCond %{REQUEST_URI} !^/pitdigital\.nl/
@@ -28,3 +20,13 @@ RewriteCond %{HTTP_HOST} ^(www\.)?woutpittens\.nl$ [NC]
 RewriteCond %{REQUEST_URI} !^/woutpittens\.nl/
 RewriteCond %{REQUEST_URI} !\.(gif|jpe?g|png|css|js|woff|woff2|ttf|svg|eot)$ [NC]
 RewriteRule ^(.*)$ /woutpittens.nl/$1 [L]
+
+# Custom 404 Error Document for pitdigital.nl
+RewriteCond %{HTTP_HOST} ^(www\.)?pitdigital\.nl$ [NC]
+RewriteRule .* - [L]
+ErrorDocument 404 /pitdigital.nl/404.html
+
+# Custom 404 Error Document for woutpittens.nl
+RewriteCond %{HTTP_HOST} ^(www\.)?woutpittens\.nl$ [NC]
+RewriteRule .* - [L]
+ErrorDocument 404 /woutpittens.nl/404.html
